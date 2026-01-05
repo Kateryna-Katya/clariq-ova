@@ -5,29 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/clariq-ova/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/clariq-ova/assets/styles-BC_VbOch.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__accent">Clariq</span>-ova
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">Главная</a></li>
+        <li><a href="#courses" class="nav__link">Курсы</a></li>
+        <li><a href="#methodology" class="nav__link">Методология</a></li>
+        <li><a href="#mentors" class="nav__link">Менторы</a></li>
+        <li><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="btn btn--header">Связаться</a>
+
+<button class="burger" id="burgerBtn" aria-label="Menu">
+  <span></span>
+  <span></span>
+</button>
   </div>
 </header>
-
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-menu__nav">
+    <a href="#home" class="mobile-menu__link">Главная</a>
+    <a href="#courses" class="mobile-menu__link">Курсы</a>
+    <a href="#methodology" class="mobile-menu__link">Методология</a>
+    <a href="#mentors" class="mobile-menu__link">Менторы</a>
+    <a href="#blog" class="mobile-menu__link">Блог</a>
+    <a href="#contact" class="btn btn--header">Начать сейчас</a>
+  </nav>
+</div>
 
     <main>
       <div class="container">
@@ -38,20 +52,50 @@
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo footer__logo">
+        <span class="logo__accent">Clariq</span>-ova
       </a>
-    </p>
+      <p class="footer__text">
+        Инновационная образовательная платформа для тех, кто готов переосмыслить подход к развитию в IT.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__list">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#courses">Курсы</a></li>
+        <li><a href="#mentors">Менторы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__list">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Data Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contact-info">
+        <li><i class="fa-solid fa-location-dot"></i> 24 Rue de Rivoli, 75004 Paris, France</li>
+        <li><i class="fa-solid fa-phone"></i> +33 1 42 74 90 00</li>
+        <li><i class="fa-solid fa-envelope"></i> support@clariq-ova.blog</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2026 Clariq-ova. Все права защищены. Предложение активно только в странах ЕС.</p>
   </div>
 </footer>
-
   </body>
 </html>
